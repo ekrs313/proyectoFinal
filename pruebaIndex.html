@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    < title >Mi primera web</ title >
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Web en Vercel</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.4);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: none;
+      background: #38bdf8;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Mi página web</h1>
-        <p>Ejemplo sencillo con HTML y CSS</p>
-    </header>
+  <div class="container">
+    <h1>🚀 Desplegado en Vercel</h1>
+    <p>Este proyecto funciona con un solo archivo HTML.</p>
+    <p>Listo para GitHub + Vercel.</p>
 
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Este es un ejemplo de una página web simple.</p>
-        </section>
-
-        <section>
-            <h2>Contacto</h2>
-            <p>Email: ejemplo@correo.com</p>
-        </section>
-    </main>
+    <button onclick="saludar()">Probar JS</button>
 
     <footer>
-        <p>© 2026 - Mi Web</p>
+      <p>Hecho con ❤️ — Febrero 2026</p>
     </footer>
+  </div>
+
+  <script>
+    function saludar() {
+      alert("¡Todo funciona perfectamente!");
+    }
+  </script>
 
 </body>
 </html>
